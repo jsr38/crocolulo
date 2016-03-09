@@ -1,0 +1,5 @@
+Model No.	Step Angle	Motor Length	Current/Phase		Resistance/Phase		Inductance/Phase		Holding Torque	# of Leads	Detent Torque	Rotor Inertia	Mass
+( °)		(L)mm	A	Ω mH N.m	No.    g.cm	g.cm  Kg
+JK57HS76-2804	1.8	76	2.8  1.13	3.6    1.89	4     600	440	1.1
+JK57HS112-3004	1.8	112	3.0  1.6	6.8    2.8	4     1200	800	1.4
+
