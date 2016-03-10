@@ -6,3 +6,16 @@ step frequency 200 * 200 / 72 = 555.56 steps s^-1
 
 1/f = 1.8ms
 
+
+Saturation mode when:
+
+$V_{GS} \gt V_{th}$ and $V_{DS} \ge \left ( V_{GS} – V_{th} \right )$
+
+
+
+Our IRL2203N has $V_{GS(th)} = 1.0V$
+
+\begin{equation*}
+V_{GS} \gt V_{th}$ and $V_{DS} \ge \left ( V_{GS} – V_{th} \right )
+\ \rightarrow 
+\end{equation*}
