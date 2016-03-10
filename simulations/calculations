@@ -1,0 +1,8 @@
+
+
+Step frequency for 200 mms^-1  :     200 steps / 72mm pulley circumference
+
+step frequency 200 * 200 / 72 = 555.56 steps s^-1
+
+1/f = 1.8ms
+
