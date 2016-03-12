@@ -6,22 +6,22 @@
 * Schematic : /home/jsr/dev/crocolulo/simulations/h-bridge.sch
 
 * Component Definitions
-L1 14 6 3.6mH
-R1 2 14 1.13R
-R2 10 3 22R
-R3 12 5 22R
-R6 11 7 22R
-R7 13 8 22R
-R8 1 9 10mR
-V1 9 4 DC 24V
-V2 10 4 pulse 0.5 40 10n 10n 10n 900u 1.81m
-V3 11 4 pulse 0.5 40 901u 10n 10n 900u 1.81m
-V4 12 4 pulse 0.5 24 10n 10n 10n 900u 1.81m
-V5 13 4 pulse 0.5 24 901u 10n 10n 900u 1.81m
+L1 13 5 3.6mH
+R1 2 13 1.13R
+R2 9 3 22R
+R3 11 4 22R
+R6 10 6 22R
+R7 12 7 22R
+R8 1 8 10mR
+V1 8 0 DC 24V
+V2 9 0 pulse 24.05 34.00 10n 680n 270n 900u 1.81m
+V3 10 0 pulse 24.05 34.00 901u 680n 270n 900u 1.81m
+V4 11 0 pulse 0.05 10 10n 680n 270n 900u 1.81m
+V5 12 0 pulse 0.05 10 901u 680n 270n 900u 1.81m
 X1 1 3 2 irl2203n
-X2 2 5 4 irl2203n
-X3 1 7 6 irl2203n
-X4 6 8 4 irl2203n
+X2 2 4 0 irl2203n
+X3 1 6 5 irl2203n
+X4 5 7 0 irl2203n
 
 * Sub-Circuit Definitions
 .SUBCKT irl2203n 1 2 3
@@ -83,7 +83,7 @@ D4 0 6 MD3
 
 * NG-Spice Simulation Commands
 .OPTIONS NOPAGE WIDTH=56 UNITS=RADIANS
-.PRINT TRAN V(14,6)
-.TRAN 10.00p 4.00m 0.00m
+.PRINT TRAN V(13,5)
+.TRAN 10.00n 4.00m 0.00m
 
 .END

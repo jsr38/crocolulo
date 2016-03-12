@@ -120,6 +120,7 @@ function [data,colnames,struct] = spice_readfile(filename, mode)
 	&& strcmp(lower(line(1:14)),"no. variables:"))
       if (linelength>14)
 	[s.no_variables,n]=sscanf(line(15:linelength)," %d","C");
+	s.no_variables
       endif
     endif
 
@@ -127,6 +128,7 @@ function [data,colnames,struct] = spice_readfile(filename, mode)
 	&& strcmp(lower(line(1:11)),"no. points:"))
       if (linelength>11)
 	[s.no_points,n]=sscanf(line(12:linelength)," %d","C");
+	s.no_points
       endif
     endif
 
@@ -159,8 +161,7 @@ function [data,colnames,struct] = spice_readfile(filename, mode)
       s.variables=cell(s.no_variables,8);
       for i = 1:s.no_variables
 	line = fgets(fid);
-	[str{1},str{2},str{3},str{4},str{5},str{6},str{7},str{8},str{9},n]= \
-	    sscanf(line," %s %s %s %s %s %s %s %s %s","C");
+	[str{1},str{2},str{3},str{4},str{5},str{6},str{7},str{8},str{9},n]= sscanf(line,"\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s","C");
 	if (n < 3)
 	  error("spice_readfile: to few variable tokens given");
 	elseif (n > 8)
@@ -193,7 +194,7 @@ function [data,colnames,struct] = spice_readfile(filename, mode)
   elseif (binaryflag==1 && realflag==0)
     data=fread(fid,[2*s.no_variables,inf],"float64",0);
     ## convert data from real and imaginary to complex
-    data=data';  ## change row/columns before combining to complex
+    data=data';  ## transpose rows and columns before combining to complex
     for n = 1:s.no_variables
       data(:,n)=data(:,2*n-1)+1i.*data(:,2*n);
     endfor

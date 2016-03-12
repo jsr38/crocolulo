@@ -65,16 +65,20 @@ D4 0 6 MD3
 *^^^^^^^^  End of included SPICE model from irl2203n.spi ^^^^^^^^
 *
 *==============  Begin SPICE netlist of main design ============
-V6 10 6 dc 0 ac 1
-L1 9 10 3.6mH 
-R1 2 9 1.13R  
-V5 8 4 pulse 0 24 900u 10n 10n 900u 1.8m
-V4 5 4 pulse 0 24 10n 10n 10n 900u 1.8m
-V3 7 4 pulse 0 4 900u 10n 10n 900u 1.8m
-V2 3 4 pulse 0 24 10n 10n 100n 900u 1.8m
-V1 1 4 DC 24V
-X4 6 8 4 irl2203n
-X3 1 7 6 irl2203n
-X2 2 5 4 irl2203n
+R8 1 8 10mR  
+R7 12 7 22R  
+R6 10 6 22R  
+R3 11 4 22R  
+R2 9 3 22R  
+L1 13 5 3.6mH 
+R1 2 13 1.13R  
+V5 12 0 pulse 0.05 10 901u 680n 270n 900u 1.81m
+V4 11 0 pulse 0.05 10 10n 680n 270n 900u 1.81m
+V3 10 0 pulse 24.05 34.00 901u 680n 270n 900u 1.81m
+V2 9 0 pulse 24.05 34.00 10n 680n 270n 900u 1.81m
+V1 8 0 DC 24V
+X4 5 7 0 irl2203n
+X3 1 6 5 irl2203n
+X2 2 4 0 irl2203n
 X1 1 3 2 irl2203n
 .end

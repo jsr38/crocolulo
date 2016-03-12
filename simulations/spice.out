@@ -3,88 +3,89 @@ Circuit: ***********************************************************************
 
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-No. of Data Columns : 65  
+No. of Data Columns : 64  
 
 Initial Transient Solution
 --------------------------
 
 Node                                   Voltage
 ----                                   -------
-14                                     -4.8541
-6                                      -4.8541
-2                                      -4.8541
-10                                    -16.3541
-3                                     -16.3541
-12                                    -16.3541
-5                                     -16.3541
-11                                    -16.3541
-7                                     -16.3541
-13                                    -16.3541
-8                                     -16.3541
-1                                       7.1459
-9                                       7.1459
-4                                     -16.8541
-x1.9                                    7.1459
-x1.7                                  -16.3541
-x1.8                                   -4.8541
+13                                     21.6869
+5                                      21.6869
+2                                      21.6869
+9                                        24.05
+3                                        24.05
+11                                        0.05
+4                                         0.05
+10                                       24.05
+6                                        24.05
+12                                        0.05
+7                                         0.05
+1                                           24
+8                                           24
+x1.9                                        24
+x1.7                                     24.05
+x1.8                                   21.6869
 x1.4                                         0
-x1.5                                      23.5
-x1.10                                     23.5
-x1.11                                     23.5
-x1.6                                      23.5
-x2.9                                   -4.8541
-x2.7                                  -16.3541
-x2.8                                  -16.8541
+x1.5                                -0.0500004
+x1.10                               -0.0500004
+x1.11                               -0.0500004
+x1.6                                -0.0500004
+x2.9                                   21.6869
+x2.7                                      0.05
+x2.8                                9.2701e-14
 x2.4                                         0
-x2.5                                      11.5
-x2.10                                     11.5
-x2.11                                     11.5
-x2.6                                      11.5
-x3.9                                    7.1459
-x3.7                                  -16.3541
-x3.8                                   -4.8541
+x2.5                                   21.6369
+x2.10                                  21.6369
+x2.11                                  21.6369
+x2.6                                   21.6369
+x3.9                                        24
+x3.7                                     24.05
+x3.8                                   21.6869
 x3.4                                         0
-x3.5                                      23.5
-x3.10                                     23.5
-x3.11                                     23.5
-x3.6                                      23.5
-x4.9                                   -4.8541
-x4.7                                  -16.3541
-x4.8                                  -16.8541
+x3.5                                -0.0500004
+x3.10                               -0.0500004
+x3.11                               -0.0500004
+x3.6                                -0.0500004
+x4.9                                   21.6869
+x4.7                                      0.05
+x4.8                                9.2701e-14
 x4.4                                         0
-x4.5                                      11.5
-x4.10                                     11.5
-x4.11                                     11.5
-x4.6                                      11.5
+x4.5                                   21.6369
+x4.10                                  21.6369
+x4.11                                  21.6369
+x4.6                                   21.6369
 v.x4.vfi1#branch                             0
-v.x4.vfi2#branch                      1.15e-11
+v.x4.vfi2#branch                   2.16369e-11
 v.x3.vfi1#branch                             0
-v.x3.vfi2#branch                      2.35e-11
+v.x3.vfi2#branch                  -5.00004e-14
 v.x2.vfi1#branch                             0
-v.x2.vfi2#branch                      1.15e-11
+v.x2.vfi2#branch                   2.16369e-11
 v.x1.vfi1#branch                             0
-v.x1.vfi2#branch                      2.35e-11
-l1#branch                          3.15037e-12
-e.x4.ev16#branch                    -2.345e-10
-e.x3.ev16#branch                  -2.70497e-10
-e.x2.ev16#branch                    -2.345e-10
-e.x1.ev16#branch                  -2.70497e-10
-v5#branch                          1.14996e-11
-v4#branch                          1.15005e-11
-v3#branch                          2.35004e-11
-v2#branch                          2.35004e-11
-v1#branch                         -2.40003e-05
+v.x1.vfi2#branch                  -5.00004e-14
+l1#branch                          1.51701e-12
+e.x4.ev16#branch                  -2.64912e-10
+e.x3.ev16#branch                    2.4917e-08
+e.x2.ev16#branch                  -2.64905e-10
+e.x1.ev16#branch                    2.4917e-08
+v5#branch                          2.16369e-11
+v4#branch                          2.16369e-11
+v3#branch                         -5.01821e-14
+v2#branch                         -5.01821e-14
+v1#branch                         -4.33742e-05
 
+
+No. of Data Rows : 400179
 .print line ignored since rawfile was produced.
-CPU time since last call: 0.048 seconds.
+CPU time since last call: 10.024 seconds.
 
-Total CPU time: 0.048 seconds.
+Total CPU time: 10.024 seconds.
 
 Total DRAM available = 7897.742188 MB.
-DRAM currently available = 5906.109375 MB.
+DRAM currently available = 4191.960938 MB.
 Total ngspice program size = 14.784180 MB.
-Resident set size = 2.028320 MB.
-Shared ngspice pages = 1.759766 MB.
+Resident set size = 2.039062 MB.
+Shared ngspice pages = 1.772461 MB.
 Text (code) pages = 1.333008 MB.
 Stack = 0 bytes.
 Library pages = 276.000 kB.
