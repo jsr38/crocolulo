@@ -6,6 +6,8 @@ step frequency 200 * 200 / 72 = 555.56 steps s^-1
 
 1/f = 1.8ms
 
+For our gate drivers, per winding of the stepper this means 
+
 
 Saturation mode when:
 
@@ -13,7 +15,7 @@ $V_{GS} \gt V_{th}$ and $V_{DS} \ge \left ( V_{GS} – V_{th} \right )$
 
 
 
-Our IRL2203N has $V_{GS(th)} = 1.0V$
+Our IRL2203N has $V_{GS(th)} = 1.0V$ @ $1V V_{DS}$
 
 \begin{equation*}
 V_{GS} \gt V_{th}$ and $V_{DS} \ge \left ( V_{GS} – V_{th} \right )
