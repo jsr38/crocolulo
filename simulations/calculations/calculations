@@ -1,0 +1,63 @@
+
+% -*- mode: latex; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- 
+
+\documentclass[12pt,a4paper,oneside,draft]{article}
+\usepackage{mathtools}
+
+\begin{document}
+
+\title{3D printer calculations}
+\author{Jeremy Reeve\\
+  Independent Researcher,\\
+  \texttt{jeremy.reeve81@gmail.com}}
+\date{\today}
+\maketitle
+
+\section{Belt calculations}
+
+For an endless belt, what is the circumference required to fit two pullies, radii $r_1,r_2$ and separation, $d$?
+
+\begin{equation}
+l  = \pi \left( r_1 + r_2 \right) + 2\sqrt{ s^2 + \left( r_2 - r_1 \right) ^2 } 
+\end{equation}
+
+Steps per millimeter of travel in the X direction:
+
+\section{Stepper motor calculations}
+
+Step frequency for 200 mm$s^{-1}$  :     200 steps / 72mm pulley circumference
+
+step frequency 200 * 200 / 72 = 555.56 steps $s^{-1}$
+
+$\frac{1}{f} = 1.8ms$
+
+Waveform rise and fall times were taken from the IR2184 MOSFET High and Low Side driver datasheet.  
+
+For our gate drivers, per winding of the stepper this means one complete four state cycle per 1.8ms.  As can be seen from plots of i(L1), we are only maximally inducing a current of ~0.5A to flow, which means we have factor 2.8/0.5 = 5.6 less torque even at maximum current!!
+
+Try with a slower rate $~100 mms^{-1}$ 
+
+As can be seen, with a 50\% duty cycle, to allow for the other phase of the stepper winding, this is still less than 1.0A which is ~1/3 of the rated torque.
+
+All the current waveforms seem to exhibit a bias toward -ve which increases with pulse length.  Note that if the waveforms are reversed in time, reversing the order of the pulses, the -ve bias is now a +ve bias. 
+
+\section{MOSFET notes}
+Saturation mode when:
+
+\begin{equation*}
+V_{GS} \gt  V_{th}
+V_{DS} \ge  \left ( V_{GS} – V_{th} \right )
+\end{equaiton*}
+
+
+Our IRL2203N has $V_{GS(th)} = 1.0V$ @ $1V V_{DS}$
+
+\begin{equation*}
+V_{GS} \gt V_{th}$ and $V_{DS} \ge \left ( V_{GS} – V_{th} \right )
+\ \rightarrow 
+\end{equation*}
+
+
+Look like we are limited by $v(t) = L \frac{di}{dt}$.
+
+\end{document}
