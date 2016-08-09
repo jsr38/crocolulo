@@ -1,1 +1,8 @@
 *~
+*.aux
+*.log
+\#*
+octave-workspace
+octave-workspace.bak
+*.raw
+*spice.out

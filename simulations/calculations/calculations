@@ -60,4 +60,7 @@ V_{GS} \gt V_{th}$ and $V_{DS} \ge \left ( V_{GS} – V_{th} \right )
 
 Look like we are limited by $v(t) = L \frac{di}{dt}$.
 
+
+Try a PWM frequency of 40kHz which implies T = 
+
 \end{document}

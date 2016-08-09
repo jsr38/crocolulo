@@ -1,0 +1,65 @@
+
+Alligator Board
+---------------
+
+J12
+
+5,13   NC
+1      MOTOR_nRESET          ENABLE_ALL
+2      DAC_SCLK              STEP0
+3      MOTOR_nFAULT          DIR0
+4      DAC_DIN               STEP1
+6      DAC_nSYNC_EXP         DIR1
+7      MOTOR_DIR5            STEP2
+8      HE_HEAT_EN2           DIR2
+9      MOTOR_STEP5           STEP3
+10     HE_HEAT_EN3           DIR3
+11     MOTOR_DIR6            STEP4
+12     HE_HEAT_EN4           DIR4
+14     EXP_PRESENCE          x 100k pull-up
+15     MOTOR_STEP6           STEP5
+16     +5V
+17     MOTOR_DIR7            DIR5
+18     +3V3
+19     MOTOR_STEP7
+20     GND
+
+
+
+J14
+
+1      +5V
+2      +3V3
+3      CNN_USART0_TX
+4      CNN_EXP_GPIO
+5      CNN_USART0_RX
+6      CNN_USART1_TX
+7      CNN_USART2_TX
+8      CNN_USART1_RX
+9      CNN_USART2_RX
+10     GND
+
+
+
+J15
+
+1,3,5,7,17,19,21,23,24,26        NC
+2,4                              +5V
+6,9,14,20,25                     GND
+8                                RPI TXD0
+10                               RPI RXD0
+11                               GPIO GEN0
+12                               GPIO GEN1
+13                               GPIO GEN2
+15                               GPIO GEN3
+16                               GPIO GEN4
+18                               GPIO GEN5
+22                               GPIO GEN6
+
+J16
+
+1       +3V3_ANA
+3,5,7,8 AGND
+2       RTD_VALUE5            x  1nF cap
+4       RTD_VALUE4            x  1nF cap
+6       RTD_VALUE3            x  1nF cap

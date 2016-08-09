@@ -166,7 +166,7 @@ C 47600 47400 1 0 0 resistor-2.sym
 T 48000 47750 5 10 0 0 0 0 1
 device=RESISTOR
 T 47800 47700 5 10 1 1 0 0 1
-refdes=R6
+refdes=R4
 T 47600 47400 5 10 1 1 0 0 1
 value=22R
 }
@@ -175,7 +175,7 @@ C 47600 45400 1 0 0 resistor-2.sym
 T 48000 45750 5 10 0 0 0 0 1
 device=RESISTOR
 T 47800 45700 5 10 1 1 0 0 1
-refdes=R7
+refdes=R5
 T 47600 45400 5 10 1 1 0 0 1
 value=22R
 }
@@ -192,7 +192,7 @@ C 51100 48900 1 0 0 resistor-2.sym
 T 51500 49250 5 10 0 0 0 0 1
 device=RESISTOR
 T 51300 49200 5 10 1 1 0 0 1
-refdes=R8
+refdes=R6
 T 51100 48900 5 10 1 1 0 0 1
 value=10mR
 }
