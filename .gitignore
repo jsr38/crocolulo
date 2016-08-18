@@ -7,3 +7,4 @@ octave-workspace.bak
 *.raw
 *spice.out
 *.rpt
+.DS_Store
