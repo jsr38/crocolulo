@@ -6,3 +6,4 @@ octave-workspace
 octave-workspace.bak
 *.raw
 *spice.out
+*.rpt
