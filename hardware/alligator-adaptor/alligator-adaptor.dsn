@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  50546 -22987  50546 -130175  115062 -130175  115062 -22987
-            50546 -22987  50546 -22987)
+      (path pcb 0  52000 -33000  52000 -121000  115000 -121000  115000 -33000
+            52000 -33000  52000 -33000)
     )
     (via "Via[0-1]_600:400_um")
     (rule
@@ -34,22 +34,22 @@
   )
   (placement
     (component "Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol"
-      (place P1 110363 -40894 front 90 (PN CONN_01X04))
-      (place P14 110363 -62484 front 90 (PN CONN_01X04))
-      (place P15 110363 -84074 front 90 (PN CONN_01X04))
-      (place P16 110363 -105664 front 90 (PN CONN_01X04))
-      (place P17 110363 -127508 front 90 (PN CONN_01X04))
-      (place P18 55372 -93472 front 270 (PN CONN_01X04))
-      (place P19 55372 -71120 front 270 (PN CONN_01X04))
-      (place P20 55372 -48514 front 270 (PN CONN_01X04))
-      (place P21 55372 -25654 front 270 (PN CONN_01X04))
+      (place P1 110000 -51000 front 90 (PN CONN_01X04))
+      (place P14 110000 -75000 front 90 (PN CONN_01X04))
+      (place P15 110000 -96000 front 90 (PN CONN_01X04))
+      (place P16 110000 -117000 front 90 (PN CONN_01X04))
+      (place P17 57000 -78000 front 270 (PN CONN_01X04))
+      (place P18 57000 -57000 front 270 (PN CONN_01X04))
+      (place P19 57000 -36000 front 270 (PN CONN_01X04))
+      (place P20 76000 -116000 front 0 (PN CONN_01X04))
+      (place P21 55000 -116000 front 0 (PN CONN_01X04))
     )
     (component Pin_Headers:Pin_Header_Straight_1x04
       (place P2 69596 -105537 front 90 (PN CONN_01X04))
       (place P8 77216 -94742 front 270 (PN CONN_01X04))
     )
     (component Pin_Headers:Pin_Header_Straight_2x04_Pitch1.27mm
-      (place P5 72898 -100457 back 270 (PN CONN_02X04))
+      (place P5 72898 -100838 back 270 (PN CONN_02X04))
     )
     (component Wire_Pads:SolderWirePad_single_1mmDrill
       (place P9 93500 -46000 front 0 (PN CONN_01X01))
@@ -58,7 +58,7 @@
       (place P13 76000 -86000 front 0 (PN CONN_01X01))
     )
     (component custom:Pin_Header_Straight_2x10_Pitch1.27mm
-      (place P11 84836 -36068 back 270 (PN CONN_02X10))
+      (place P11 84836 -36957 back 270 (PN CONN_02X10))
     )
     (component Mounting_Holes:MountingHole_3.2mm_M3_Pad
       (place P3 64389 -103124 front 0 (PN CONN_01X01))
