@@ -9,3 +9,6 @@ My CoreXY 3D printer [savagecorexy](https://github.com/jsr38/savagecorexy) is cu
 crocolulo:
 ![alt text](https://github.com/jsr38/crocolulo/raw/master/hardware/alligator-adaptor/png/alligator-adaptor.png "Crocolulo Alligator Expansion")
 
+![alt text](https://github.com/jsr38/crocolulo/raw/master/hardware/alligator-adaptor/jpg/IMG_20160819_163819.jpg "One side of prototype PCB")
+
+![alt text](https://github.com/jsr38/crocolulo/raw/master/hardware/alligator-adaptor/jpg/IMG_20160828_155809.jpg "Prototype version 0.1")
